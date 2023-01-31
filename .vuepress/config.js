@@ -1,3 +1,5 @@
+const plugins = require('./config/plugins')
+
 module.exports = {
   "title": "y1_cheng",
   "description": "wu",
@@ -47,12 +49,13 @@ module.exports = {
         "items": [
           {
             "text": "GitHub",
-            "link": "https://github.com/recoluan",
+            "link": "https://github.com/SickleAShuriken",
             "icon": "reco-github"
           }
         ]
       }
     ],
+    // 左侧边栏
     "sidebar": {
       "/docs/theme-reco/": [
         "",
@@ -61,7 +64,10 @@ module.exports = {
         "api"
       ]
     },
+    // 右侧侧边栏全局开启
+    "subSidebar": "auto", //在所有页面中启用自动生成子侧边栏，原 sidebar 仍然兼容
     "type": "blog",
+    // 博客配置
     "blogConfig": {
       "category": {
         "location": 2,
@@ -86,15 +92,16 @@ module.exports = {
         "link": "https://vuepress-theme-reco.recoluan.com"
       }
     ],
-    "logo": "/logo.png",
+    "logo": "/avatar.jpg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
     "author": "y1_cheng",
-    "authorAvatar": "/avatar.png",
+    "authorAvatar": "/avatar.jpg",
     "record": "xxxx",
-    "startYear": "2017"
+    "startYear": "2023"
   },
+  "plugins": plugins,
   "markdown": {
     "lineNumbers": true
   }

@@ -8,6 +8,8 @@
   },
   "devDependencies": {
     "vuepress": "1.9.7",
+    "vuepress-plugin-cursor-effects": "^1.1.6",
+    "vuepress-plugin-sakura": "^1.2.1",
     "vuepress-theme-reco": "1.6.16"
   },
   "description": "wu"
