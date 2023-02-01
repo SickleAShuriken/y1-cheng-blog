@@ -1,63 +1,92 @@
 ---
-title: vuepress-theme-reco
-date: 2019-04-09
+title: Markdown的使用
+date: 2023-02-01
+tags:
+  - markdown
+category:
+  - notes
 ---
 
-![vuepress](https://img.shields.io/badge/vuepress-0.14.8-brightgreen.svg)
-![leancloud-storage](https://img.shields.io/badge/leancloud--storage-3.10.1-orange.svg)
-![valine](https://img.shields.io/badge/valine-1.3.4-blue.svg)
-
-::: tip 介绍
-1. 这是一个vuepress主题，旨在添加博客所需的分类、TAB墙、分页、评论等能；<br>
-2. 主题追求极简，根据 vuepress 的默认主题修改而成，官方的主题配置仍然适用；<br>
-3. 你可以打开 [午后南杂](http://recoluan.gitlab.io) 来查看效果。
+::: tip 摘要
+记录 typore 中 markdown 基本用法
 :::
 
-## Use
+# 一级标题 (ctrl + 1)
 
-**Build**
+## 二级标题 (ctrl + 2)
 
-```bash
-npm run build
+### 标题升级 (ctrl + +)
 
-# or
+## 字体
 
-yarn build
-```
+### 加粗 (ctrl + B)
 
-**Server**
+### *倾斜* (ctrl + i)
 
-```bash
-npm run dev
+### <u>下划线</u> (ctrl + u)
 
-# or
+### ~~删除线~~
 
-yarn dev
-```
+### `内联代码`
 
-## Play Together
+## **高亮**
 
-### 0.x
+==在内容左右两边输入\=\===
 
-`vuepress-theme-reco@0.x` 是基于 `vuepress@0.x` 的博客主题。
+## **代码块**
 
-`vuepress@0.x` 功能比较简单，只适合书写简单的文档，但好在支持主题自定义，而个人又希望能够用它来书写博客，原因就是它足够的简洁，毫无疑问，这也符合很多程序员的观念，也就是在这种情况下，`vuepress-theme-reco@0.x` 的第一个版本经过一个通宵而产生。
+输入```（在键盘的左上角，1 的旁边）再加上编程语言或者 shell 命令
 
-主题开源不久，很多朋友通过各种联系方式，给到很多好的意见和建议，所以我个人也在积极地更新。
+````java
+代码块
+    输入```（在键盘的左上角，1的旁边）再加上编程语言或者shell命令，例如：
+    ```java(表示要输入Java的代码块)
+````
 
-因为我是一名前端开发工程师，开发的过程中，总是想着能不能加入一些炫酷的效果，有很多次都是添加上又去掉，反反复复，最后都是被 **简洁** 的这个原则阻止掉，毕竟，现在我是将它当作一个产品来看待，并不是一个技术或者是技巧的尝试项目。
+## **列表**
+* 无序列表 （输入*和一个空格）
+- 无序列表（输入-和一个空格）
 
-### 1.x
+## **脚注**
+这里有个脚注[^脚注]
+==输入[^]在里面加上内容== 
 
-随着不断有用户过来询问：为什么 `vuepress-theme-reco@0.x` 不能在 `vuepress@1.x` 上使用？本来只是打算对 `vuepress-theme-reco@0.x` 进行简单的bug修复的我，终究还是忍不住，开始了 `vuepress-theme-reco@1.x` 的开发。又是在一个寂静的凌晨两点半（晚上就是出活快），我默默地开始了。
+## **分割线**
+---
+***
+1、输入---再按回车就出现分割线
 
-主题升级的关键也就是 `@vuepress/plugin-blog` 这款官方插件，它不需要再去麻烦地过滤数据，将分类和标签的相关信息直接存在 `$categories` 和 `$tags` 这两个全局变量中。借助于 `@vuepress/plugin-blog`，分类和标签功能更容易实现，但也有了一些局限。接下来两三天的时间，都是在进行功能的迁移和一些bug的修复。
+2、输入***再按下回车就出现分割线
 
-`vuepress-theme-reco@0.x` 的开发中，更加深刻地明白了模块化和组件化编程的重要性，如果当初没有把一些功能进行封装，而是直接简单的复制，这次升级也不会这么顺利。模块拆分的越细，使用就会越灵活。
+## 图片
+![TEST](./images/happy.jpg)
 
-### CLI
+## 链接
+[JS -- 2023](../JS/2023/23201.md)
 
-还是衷心地希望能有更多的朋友参与进来，更快地去完善它。接下来时间允许的情况下，我会开源一款自动生成博客的脚手架，略过配置步骤，直接书写优质内容，这也是我后来逐渐形成的一种信念，就是希望能让这款主题，功能越完善，使用越来越简单。
+## GitHub风格表格
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
 
-## License
-[MIT](https://github.com/recoluan/vuepress-theme-reco/blob/master/LICENSE)
+
+<table>
+    <thead>
+        <tr>
+            <th>名称</th>
+            <th>值</th>
+            <th>备注</th>
+        </tr>
+    </thead>
+    <tbody>
+       <!-- 省略 tbody 内容 -->
+    </tbody>
+</table>
+
+## emoji
+:tada: :100:
+
+## 目录
+输入[[toc]]
