@@ -11,17 +11,19 @@ tagline: Never give up
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
+# bgImage: /happy.jpg
 # bgImageStyle: {
-#   height: '450px'
+#   height: '450px',
+#   background-position: 0 50%,
 # }
 isShowTitleInHome: false
 actionText: Guide
-actionLink: /views/other/guide
+actionLink: /blogs/other/guide
 features:
 - title: Yesterday
   details: History
 - title: Today
-  details: Never give up
+  details: Don't Give Up
 - title: Tomorrow
   details: Hope
 ---

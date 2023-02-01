@@ -2,8 +2,8 @@ const plugins = require('./config/plugins')
 
 module.exports = {
   "title": "y1_cheng",
-  "description": "wu",
-  "dest": "public",
+  "description": "y1_cheng 's blog",
+  "dest": "./dist",
   "head": [
     [
       "link",
@@ -12,6 +12,7 @@ module.exports = {
         "href": "/favicon.ico"
       }
     ],
+    // 移动端适配
     [
       "meta",
       {
@@ -98,7 +99,7 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "y1_cheng",
     "authorAvatar": "/avatar.jpg",
-    "record": "xxxx",
+    "record": "y1_cheng 's blog",
     "startYear": "2023"
   },
   "plugins": plugins,
