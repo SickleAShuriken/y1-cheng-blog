@@ -3,7 +3,7 @@ title: Markdown的使用
 date: 2023-02-01
 tags:
   - markdown
-category:
+categories:
   - notes
 ---
 
