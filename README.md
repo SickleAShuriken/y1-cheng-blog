@@ -11,7 +11,7 @@ tagline: Never give up
 #   background: '#fff',
 #   borderRadius: '1rem',
 # }
-# bgImage: /happy.jpg
+bgImage: /cat.jpg
 # bgImageStyle: {
 #   height: '450px',
 #   background-position: 0 50%,
